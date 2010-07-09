@@ -13,24 +13,6 @@
 	<artifactId>spring-modules-cache</artifactId>
 	<name>SpringModules - Cache</name>
 	
-	<properties>
-		<gs.version>7.0.2-ga</gs.version>
-	</properties>
-	
-	<!-- TODO: Rather use a repo. manager like nexus -->
-	<repositories>
-		<repository>
-			<id>jboss.com</id>
-			<url>http://repository.jboss.com/maven2/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-	
 	<build>
 		<plugins>
 			<plugin>
