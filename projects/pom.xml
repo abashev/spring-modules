@@ -1,73 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.springmodules</groupId>
-    <artifactId>spring-modules</artifactId>
-    <version>0.10-SNAPSHOT</version>
-  </parent>
-  <groupId>org.springmodules</groupId>
-  <artifactId>projects</artifactId>
-  <packaging>pom</packaging>
-  <name>SpringModules - Projects Parent</name>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.springmodules</groupId>
+		<artifactId>spring-modules</artifactId>
+		<version>0.10-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>org.springmodules</groupId>
+	<artifactId>projects</artifactId>
+	<packaging>pom</packaging>
+	<name>SpringModules - Projects Parent</name>
 
-  <modules>
-    <!-- <module>spring-modules-ant</module>
+	<modules>
+		<!-- <module>spring-modules-ant</module>
         <module>spring-modules-aop</module> -->
-        <module>spring-modules-cache</module>
-        <!-- <module>spring-modules-db4o</module>
-        <module>spring-modules-flux</module>
-        <module>spring-modules-hivemind</module>
-        <module>spring-modules-jakarta-commons</module>
-        <module>spring-modules-javaspaces</module>-->
-        <!-- jbpm30 disabled because can't find a repo containing jboss:jbpm:jar:3.0.3 -->
-        <!--<module>spring-modules-jbpm30</module>-->
-        <module>spring-modules-jbpm31</module>
-        <module>spring-modules-jcr</module><!--
+		<module>spring-modules-cache</module>
+		<!--
+			<module>spring-modules-db4o</module> <module>spring-modules-flux</module> <module>spring-modules-hivemind</module>
+			<module>spring-modules-jakarta-commons</module> <module>spring-modules-javaspaces</module>
+		-->
+		<!-- jbpm30 disabled because can't find a repo containing jboss:jbpm:jar:3.0.3 -->
+		<!--<module>spring-modules-jbpm30</module>-->
+		<module>spring-modules-jbpm31</module>
+		<module>spring-modules-jcr</module><!--
         <module>spring-modules-jsr94</module>-->
-        <module>spring-modules-lucene</module><!--
-        <module>spring-modules-ojb</module>
-        <module>spring-modules-orbroker</module>
-        <module>spring-modules-osworkflow</module>-->
-        <module>spring-modules-springmvc-extra</module>
-        <module>spring-modules-tapestry</module>
-        <module>spring-modules-template</module>
-        <module>spring-modules-validation</module>
-        <module>spring-modules-xt</module>
-    </modules>
+		<module>spring-modules-lucene</module>
+		<!--
+			<module>spring-modules-ojb</module> <module>spring-modules-orbroker</module>
+			<module>spring-modules-osworkflow</module>
+		-->
+		<module>spring-modules-springmvc-extra</module>
+		<module>spring-modules-tapestry</module>
+		<module>spring-modules-template</module>
+		<module>spring-modules-validation</module>
+		<module>spring-modules-xt</module>
+	</modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring</artifactId>
-            <version>${version.spring}</version>
-        </dependency>
-        <dependency>
-        	<groupId>junit</groupId>
-        	<artifactId>junit</artifactId>
-        	<version>4.6</version>
-        </dependency>
-        <dependency>
-        	<groupId>org.easymock</groupId>
-        	<artifactId>easymock</artifactId>
-        	<version>${version.easymock}</version>
-        	<scope>test</scope>
-        </dependency>
+	<dependencies>
 		<dependency>
-		    <groupId>org.easymock</groupId>
-		    <artifactId>easymockclassextension</artifactId>
-        	<version>${version.easymock}</version>
-        	<scope>test</scope>
-        </dependency>        
-    </dependencies>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>${version.easymock}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymockclassextension</artifactId>
+			<version>${version.easymock}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
-	<!-- use only on a per module project that needs it -->
-    <!-- <repositories>
-        <repository>
-            <id>repository.jboss.com</id>
-            <url>http://repository.jboss.com/maven2</url>
-        </repository>
-    </repositories> -->
 
 </project>
