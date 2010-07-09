@@ -24,9 +24,8 @@ import java.util.List;
 
 import junit.framework.TestCase;
 
+import org.apache.commons.attributes.Attributes;
 import org.easymock.MockControl;
-
-import org.springframework.metadata.Attributes;
 
 /**
  * <p>

@@ -17,12 +17,12 @@
  */
 package org.springmodules.cache.config;
 
+import org.apache.commons.attributes.Attributes;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.PropertyValue;
 import org.springframework.beans.factory.config.RuntimeBeanReference;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
-import org.springframework.metadata.commons.CommonsAttributes;
 
 /**
  * <p>
@@ -41,7 +41,7 @@ public final class CommonsAttributesParser extends
    */
   private static class BeanName {
 
-    static final String ATTRIBUTES = CommonsAttributes.class.getName();
+    static final String ATTRIBUTES = Attributes.class.getName();
   }
 
   /**
@@ -89,7 +89,7 @@ public final class CommonsAttributesParser extends
    */
   protected void registerCustomBeans(BeanDefinitionRegistry registry) {
     RootBeanDefinition attributes = new RootBeanDefinition(
-        CommonsAttributes.class);
+        Attributes.class);
     registry.registerBeanDefinition(BeanName.ATTRIBUTES, attributes);
   }
 

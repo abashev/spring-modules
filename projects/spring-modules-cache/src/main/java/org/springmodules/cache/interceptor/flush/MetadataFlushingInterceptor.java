@@ -22,8 +22,8 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 import org.aopalliance.intercept.MethodInvocation;
+import org.apache.commons.attributes.Attributes;
 
-import org.springframework.metadata.Attributes;
 import org.springframework.util.StringUtils;
 
 import org.springmodules.cache.FlushingModel;

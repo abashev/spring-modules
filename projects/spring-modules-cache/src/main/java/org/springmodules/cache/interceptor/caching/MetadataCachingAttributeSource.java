@@ -22,11 +22,11 @@ import java.lang.reflect.Method;
 import java.util.Collection;
 import java.util.Iterator;
 
+import org.apache.commons.attributes.Attributes;
 import org.springmodules.cache.CacheAttribute;
 import org.springmodules.cache.interceptor.MetadataCacheAttributeSource;
 import org.springmodules.cache.interceptor.MetadataCacheAttributeSource.MetadataFinder;
 
-import org.springframework.metadata.Attributes;
 import org.springframework.util.CollectionUtils;
 
 /**

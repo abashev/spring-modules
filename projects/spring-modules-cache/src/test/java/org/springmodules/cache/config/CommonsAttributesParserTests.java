@@ -17,11 +17,11 @@
  */
 package org.springmodules.cache.config;
 
+import org.apache.commons.attributes.Attributes;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.PropertyValue;
 import org.springframework.beans.factory.config.RuntimeBeanReference;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
-import org.springframework.metadata.commons.CommonsAttributes;
 
 /**
  * <p>
@@ -33,7 +33,7 @@ import org.springframework.metadata.commons.CommonsAttributes;
 public class CommonsAttributesParserTests extends
     AbstractCacheSetupStrategyParserImplTestCase {
 
-  private static final String ATTRIBUTES_BEAN_NAME = CommonsAttributes.class
+  private static final String ATTRIBUTES_BEAN_NAME = Attributes.class
       .getName();
 
   private CommonsAttributesParser parser;
@@ -74,7 +74,7 @@ public class CommonsAttributesParserTests extends
     AbstractBeanDefinition attributesDefinition = (AbstractBeanDefinition) registry
         .getBeanDefinition(ATTRIBUTES_BEAN_NAME);
     ConfigAssert.assertBeanDefinitionWrapsClass(attributesDefinition,
-        CommonsAttributes.class);
+        Attributes.class);
   }
 
   protected void afterSetUp() throws Exception {

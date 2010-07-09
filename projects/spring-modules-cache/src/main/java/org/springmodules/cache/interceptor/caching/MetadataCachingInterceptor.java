@@ -21,10 +21,10 @@ package org.springmodules.cache.interceptor.caching;
 import java.lang.reflect.Method;
 
 import org.aopalliance.intercept.MethodInvocation;
+import org.apache.commons.attributes.Attributes;
 
 import org.springmodules.cache.CachingModel;
 
-import org.springframework.metadata.Attributes;
 import org.springframework.util.StringUtils;
 
 /**
