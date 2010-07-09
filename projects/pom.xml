@@ -6,6 +6,7 @@
 	
 	<groupId>org.springmodules</groupId>
 	<artifactId>projects</artifactId>
+	<version>0.10-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>SpringModules - Projects Parent</name>
 
@@ -40,7 +41,7 @@
 		</repositories>
 	-->
 	<properties>
-		<version.spring>2.5.6</version.spring>
+		<version.spring>3.0.3.RELEASE</version.spring>
 		<version.easymock>2.5.2</version.easymock>
 		<gs.version>7.0.2-ga</gs.version>
 		
@@ -65,7 +66,23 @@
 			<url>scp://sharca.com/var/repository</url>
 		</repository>
 	</distributionManagement>
-
+	
+	<dependencies>
+		<!-- All artifacts should be related for Spring Core -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+	</dependencies>
+	
 	<dependencyManagement>
 		<dependencies>
 			<!-- Common -->
