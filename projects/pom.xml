@@ -374,6 +374,13 @@
 				<artifactId>ognl</artifactId>
 				<version>2.7.1</version>
 			</dependency>
+			
+			<!-- Jsr107 dependencies -->
+			<dependency>
+	            <groupId>net.sf.jsr107cache</groupId>
+	            <artifactId>jsr107cache</artifactId>
+	            <version>1.1</version>
+	        </dependency>
 		</dependencies>
 	</dependencyManagement>
 

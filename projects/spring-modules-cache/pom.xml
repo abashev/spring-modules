@@ -151,6 +151,13 @@
 			<optional>true</optional>
 		</dependency>
 	
+		<!-- Jsr107 dependencies -->
+		<dependency>
+			<groupId>net.sf.jsr107cache</groupId>
+			<artifactId>jsr107cache</artifactId>
+			<optional>true</optional>
+		</dependency>
+	
 		<!-- Testing -->
 		<dependency>
 			<groupId>junit</groupId>
